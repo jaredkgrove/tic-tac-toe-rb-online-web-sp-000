@@ -62,6 +62,12 @@ def over?(board)
   won?(board) || draw?(board)
 end
 
+def winner(board)
+  if won?(board).class == Array
+    board[won?(board)[0]]
+  end
+end
+
 #def turn_count(board)
 #  spaces_filled = 0
 #  board.each do |space|
