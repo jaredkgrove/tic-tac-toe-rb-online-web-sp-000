@@ -72,6 +72,7 @@ def play(board)
   do until over?(board)
     turn(board)
   end
+  
 end
 
 #def turn_count(board)
