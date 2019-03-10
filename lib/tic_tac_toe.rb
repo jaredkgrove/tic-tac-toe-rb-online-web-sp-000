@@ -40,6 +40,10 @@ def turn_count(board)
   board.count {|mark| mark == "X" || mark == "O"}
 end
 
+def current_player(board)
+  turn_count(board).even? ? "X" : "O"
+end
+
 #def turn_count(board)
 #  spaces_filled = 0
 #  board.each do |space|
