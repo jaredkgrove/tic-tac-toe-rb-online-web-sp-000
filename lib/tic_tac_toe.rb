@@ -73,7 +73,7 @@ def play(board)
     turn(board)
   end
   if won?(board)
-    puts  "Congratulations play #{winner(board)}!"
+    puts  "Congratulations #{winner(board)}!"
   else
     puts "Cats game!"
   end
