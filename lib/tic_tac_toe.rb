@@ -72,7 +72,11 @@ def play(board)
   do until over?(board)
     turn(board)
   end
-  
+  if won?(board)
+    puts  "Congratulations play #{winner}!"
+  else
+    puts "Cats game!"
+  end
 end
 
 #def turn_count(board)
