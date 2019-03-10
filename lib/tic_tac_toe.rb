@@ -37,7 +37,7 @@ def turn(board)
 end
 
 def turn_count(board)
-  board.count {|mark| 
+  board.count {|mark| mark.match("X")
 end
 
 def turn_count(board)
