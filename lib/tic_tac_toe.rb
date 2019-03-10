@@ -68,7 +68,11 @@ def winner(board)
   end
 end
 
-
+def play(board)
+  do until over?(board)
+    turn(board)
+  end
+end
 
 #def turn_count(board)
 #  spaces_filled = 0
