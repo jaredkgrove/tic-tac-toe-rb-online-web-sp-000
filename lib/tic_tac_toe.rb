@@ -50,6 +50,18 @@ def won?(board)
   end
 end
 
+def full?(board)
+  board.all? {|space| space == "X" || space == "O"}
+end
+  
+def draw?(board)
+  full?(board) && !won?(board) 
+end
+  
+def over?(board)
+  won?(board) || draw?(board)
+end
+
 #def turn_count(board)
 #  spaces_filled = 0
 #  board.each do |space|
