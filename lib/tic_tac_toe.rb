@@ -37,7 +37,7 @@ def turn(board)
 end
 
 def turn_count(board)
-  board.count
+  board.count {\
 end
 
 def turn_count(board)
